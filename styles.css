@@ -1,0 +1,44 @@
+body {
+  padding: 70px 15px 15px 15px;
+  font-family: "Source Sans Pro", sans-serif; }
+  body .navbar-default {
+    background-color: transparent;
+    border-color: transparent; }
+  body .navbar li {
+    font-size: 20px; }
+  body h1 {
+    font-family: "Bubbler One", sans-serif;
+    color: #ffffff;
+    z-index: 1;
+    position: relative;
+    -ms-transform: rotate(20deg);
+    /* IE 9 */
+    -webkit-transform: rotate(20deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(20deg);
+    padding: 250px 100px;
+    font-size: 100px; }
+  body a {
+    font-family: "Bubbler One", sans-serif; }
+  body .circle {
+    opacity: .5;
+    position: absolute; }
+  body .blueCircle {
+    width: 500px;
+    height: 500px;
+    -moz-border-radius: 250px;
+    -webkit-border-radius: 250px;
+    border-radius: 250px;
+    background: #66C2C3;
+    top: 100px; }
+  body .purpleCircle {
+    width: 350px;
+    height: 350px;
+    -moz-border-radius: 250px;
+    -webkit-border-radius: 250px;
+    border-radius: 250px;
+    background: #C8A2C8;
+    top: 250px;
+    left: 35%; }
+
+/*# sourceMappingURL=styles.css.map */
