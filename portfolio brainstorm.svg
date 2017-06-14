@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="258.47617"
-     inkscape:cy="1648.8712"
+     inkscape:cx="258.98125"
+     inkscape:cy="1107.1538"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -362,5 +362,12 @@
        height="43.030396"
        x="75.17794"
        y="61.134636" />
+    <rect
+       style="opacity:1;fill:#1a1a1a;fill-opacity:0.39215686;stroke:none;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.39215686"
+       id="rect4749-1-9"
+       width="68.361908"
+       height="43.030396"
+       x="134.33249"
+       y="84.387077" />
   </g>
 </svg>

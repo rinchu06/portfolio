@@ -1,0 +1,64 @@
+$headingFont: 'Bubbler One', sans-serif;
+$bodyFont: 'Source Sans Pro', sans-serif;
+
+@mixin rotate($degree) {
+  -ms-transform: rotate($degree); /* IE 9 */
+  -webkit-transform: rotate($degree); /* Chrome, Safari, Opera */
+  transform: rotate($degree);
+}
+
+@mixin border-radius($radius) {
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+body {
+  padding: 70px 15px 15px 15px;
+  font-family: $bodyFont;
+
+  .navbar-default {
+    background-color: transparent;
+    border-color: transparent; 
+  }
+
+  .navbar li {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-family: $headingFont;
+    color: #ffffff;
+    z-index: 1;
+    position: relative;
+    @include rotate(20deg);
+    padding: 250px 100px;
+    font-size: 100px;
+  }
+
+  a {
+    font-family: $headingFont;
+  }
+
+  .circle {
+    opacity: .5;
+    position: absolute;
+  }
+
+  .blueCircle {
+  	width: 500px;
+  	height: 500px;
+  	@include border-radius(250px);
+    background: #66C2C3;
+    top: 100px;
+  }
+
+  .purpleCircle {
+    width: 350px;
+  	height: 350px;
+  	@include border-radius(250px);
+    background: #C8A2C8;
+    top: 250px;
+    left: 35%;
+  }
+}
