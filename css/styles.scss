@@ -1,6 +1,10 @@
 $headingFont: 'Bubbler One', sans-serif;
 $bodyFont: 'Source Sans Pro', sans-serif;
-$homeColor: #666666;
+$homeFontColor: #666666;
+$darkBackground: #222222;
+$borderColor: #87decc;
+$timelineColor: #eed7f4;
+$linkColor: #87decc;
 
 @mixin rotate($degree) {
   -ms-transform: rotate($degree); /* IE 9 */
@@ -14,8 +18,23 @@ $homeColor: #666666;
   border-radius: $radius;
 }
 
+@mixin box-shadow($shadowParameters) {
+  -webkit-box-shadow: $shadowParameters;
+  -moz-box-shadow: $shadowParameters;
+   box-shadow: $shadowParameters;
+}
+
+@mixin fadeIn($fadeInParameters) {
+  -webkit-transition: $fadeInParameters;
+  -moz-transition: $fadeInParameters;
+  -o-transition: $fadeInParameters;
+  transition: $fadeInParameters;
+}
+
 body {
   font-family: $bodyFont;
+  font-weight: 300;
+  font-size: 18px;
 
   .navbar-default {
     background-color: transparent;
@@ -30,7 +49,7 @@ body {
   body .navbar-default .navbar-nav> {
 
     li>a {
-        color: $homeColor;
+        color: $homeFontColor;
     }
 
     .active>a, .active>a:focus, .active>a:hover {
@@ -42,20 +61,99 @@ body {
   h1 {
     font-family: $headingFont;
     z-index: 1;
-    font-size: 100px;
-    margin-top: 0;
+    font-size: 75px;
+    margin: 0;
     line-height: 1.75em;
-    padding: 100px;
-    color: $homeColor;
+    padding: 100px 0;
+    color: $homeFontColor;
+  }
+
+  h2 {
+    font-family: $headingFont;
+    text-transform: uppercase;
+    margin: 0;
+    color: #ffffff;
+    padding: 50px 0;
   }
 
   a {
     font-family: $headingFont;
+    color: $linkColor;
+    &:hover {
+      color: $linkColor;
+    }
   }
 
   #home {
     background: url("../img/home.png") no-repeat center center;
     background-size: cover;
+  }
+
+  #experience {
+    background-color: $darkBackground;
+    color: #ffffff;
+
+    .timeline {
+      position: relative;
+      overflow: auto;
+      margin-top: 50px;
+      overflow-y: hidden;
+      padding-top: 20px;
+     &:before {
+       content: '';
+       position: absolute;
+       height: 100%;
+       width: 6px;
+       background: $timelineColor;
+       left: 50%;
+     }
+       .entryLeft {
+         float: left;
+         p {
+           text-align: right;
+         }
+         &:before {
+             right:-51px;
+         }
+       }
+       .entryRight {
+         float: right;
+         p {
+           text-align: left;
+         }
+         &:before {
+             left:-45px;
+         }
+       }
+      .entry {
+        width:calc(50% - 80px);
+        padding:0 20px 80px 20px;
+        position: relative;
+        clear:both;
+        z-index: 1;
+          .entryTime {
+            font-size: 13px;
+          }
+          &:before {
+              content: '';
+              position: absolute;
+              width:8px;
+              height:8px;
+              border:4px solid $timelineColor;
+              background-color:$timelineColor;
+              border-radius:100%;
+              transform:translateY(-50%);
+              margin-top: 7px;
+              z-index:1000;
+              @include fadeIn(box-shadow .4s);
+          }
+          &:hover:before {
+            @include border-radius(10px);
+            @include box-shadow(0px 0px 10px 10px rgba(135, 222, 205, 0.67));
+          }
+      }
+    }
+
   }
 
 }
