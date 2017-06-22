@@ -20,10 +20,10 @@
   <![endif]-->
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
   <div id="home">
     <div class="container">
-      <nav class="navbar navbar-default navbar-fixed-top">
+      <nav id="myNavbar" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <!-- Brand and toggle get grouped for better mobile display -->
           <div class="navbar-header">
@@ -39,10 +39,11 @@
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
-              <li class="active"><a href="#home">Home <span class="sr-only">(current)</span></a></li>
-              <li><a href="#">Experience</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
+              <li class="active"><a href="#home">Home</a></li>
+              <li><a href="#experience">Experience</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
           </div><!-- /.navbar-collapse -->
         </div><!-- /.container-fluid -->
@@ -55,9 +56,9 @@
     </div>
   </div>
 
-  <div id="experience">
+  <div id="experience" class="darkBackground">
     <div class="container">
-      <h2 class="sectionHeading">Experience</h2>
+      <h2 class="sectionHeading"><span>Experience</span></h2>
 
       <div class="timeline">
         <div class="diamond">
@@ -90,7 +91,7 @@
 
         <div class="entry entry4 entryRight">
           <div class"entryContent">
-            <h2>Recruitment and Outreach Program Assistant</h2>
+            <h2>Recruitment & Outreach Program Assistant</h2>
               <p><a href="" target="_blank">Clark College</a><br/>
               Sept. 2014 - Aug. 2015</p>
           </div>
@@ -125,13 +126,64 @@
       </div> <!-- end of timeline -->
     </div> <!-- end of container -->
 
-    <div class="experienceBkrd">
-      <img src="img/experience.png" class="img-responsive" />
-    </div>
+    <img src="img/experience.png" class="img-responsive experienceBkrd" />
 
   </div> <!-- end of experience -->
 
+  <div id="skills">
+    <div class="container">
+      <h2 class="sectionHeading"><span>Skills</span></h2>
+    </div>
+  </div>
 
+  <div id="about">
+    <div class="container">
+      <h2 class="sectionHeading"><span>About</span></h2>
+    </div>
+  </div>
+
+  <div id="contact" class="darkBackground">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="sectionHeading"><span>Contact</span></h2>
+          <p>I like making new friends. Send me a message.</p>
+        </div> <!-- end of col -->
+      </div> <!-- end of row-->
+
+      <div class="row">
+        <div class="col-md-3 smIcon">
+          <a href="" target="_blank"><img src="" /></a>
+        </div> <!-- end of col -->
+
+        <div class="col-md-3 smIcon">
+          <a href="" target="_blank"><img src="" /></a>
+        </div> <!-- end of col -->
+
+        <div class="col-md-3 smIcon">
+          <a href="" target="_blank"><img src="" /></a>
+        </div> <!-- end of col -->
+
+        <div class="col-md-3 smIcon">
+          <a href="" target="_blank"><img src="" /></a>
+        </div> <!-- end of col -->
+
+      </div> <!-- end of row-->
+
+      <div class="row">
+        <div class="col-md-12">
+          <p>Designed and developed by Corrine Nightingale &copy;</p>
+        </div> <!-- end of col -->
+        
+      </div> <!-- end of row-->
+
+    </div> <!-- end of container -->
+  </div> <!-- end of contact -->
+
+
+
+  <script src="js/custom.js"></script>
 
 </body>
 

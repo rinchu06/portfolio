@@ -1,10 +1,12 @@
 $headingFont: 'Bubbler One', sans-serif;
 $bodyFont: 'Source Sans Pro', sans-serif;
-$homeFontColor: #666666;
+$homeFontColor: #ffffff;
 $darkBackground: #222222;
 $borderColor: #87decc;
 $timelineColor: #eed7f4;
 $linkColor: #87decc;
+$darkText: #666666;
+$lightText: #ffffff;
 
 @mixin rotate($degree) {
   -ms-transform: rotate($degree); /* IE 9 */
@@ -36,6 +38,14 @@ body {
   font-weight: 300;
   font-size: 18px;
 
+  .darkBackground {
+    background-color: $darkBackground;
+    color: $lightText;
+    h2 {
+      color: $lightText;
+    }
+  }
+
   .navbar-default {
     background-color: transparent;
     border-color: transparent;
@@ -46,16 +56,21 @@ body {
     text-transform: uppercase;
   }
 
-  body .navbar-default .navbar-nav> {
-
-    li>a {
-        color: $homeFontColor;
-    }
-
-    .active>a, .active>a:focus, .active>a:hover {
+//figure out how to nest this
+  .navbar-default .navbar-nav>li>a {
+    color: $homeFontColor;
+    &:hover {
+      color: $homeFontColor;
       text-decoration: underline;
     }
+  }
 
+  .navbar-default .navbar-nav>.active>a,
+  .navbar-default .navbar-nav>.active>a:focus,
+  .navbar-default .navbar-nav>.active>a:hover {
+    text-decoration: underline;
+    background-color: transparent;
+    color: $homeFontColor;
   }
 
   h1 {
@@ -65,15 +80,18 @@ body {
     margin: 0;
     line-height: 1.75em;
     padding: 250px 0;
-    color: $homeFontColor;
+    color: $darkText;
   }
 
   h2 {
     font-family: $headingFont;
     text-transform: uppercase;
     margin: 0;
-    color: #ffffff;
-    padding: 50px 0;
+    color: $darkText;
+    padding: 50px 0 10px 0;
+    span {
+        border-bottom: 2px solid $linkColor;
+    }
   }
 
   a {
@@ -91,7 +109,12 @@ body {
 
   #experience {
     background-color: $darkBackground;
-    color: #ffffff;
+    color: $lightText;
+    position: relative;
+
+    h2 {
+      color: $lightText;
+    }
 
     .timeline {
       position: relative;
@@ -188,10 +211,12 @@ body {
     } //end of timeline
 
     .experienceBkrd {
-      left: 0;
+      right: 0;
       bottom: 0;
+      position: absolute;
+      width: 450px;
     }
 
-  }
+  }//end of experience
 
 }
