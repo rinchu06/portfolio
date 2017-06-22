@@ -64,7 +64,7 @@ body {
     font-size: 75px;
     margin: 0;
     line-height: 1.75em;
-    padding: 100px 0;
+    padding: 250px 0;
     color: $homeFontColor;
   }
 
@@ -96,33 +96,36 @@ body {
     .timeline {
       position: relative;
       overflow: auto;
-      margin-top: 50px;
       overflow-y: hidden;
       padding-top: 20px;
      &:before {
        content: '';
        position: absolute;
        height: 100%;
-       width: 6px;
+       width: 8px;
        background: $timelineColor;
        left: 50%;
      }
+        h2 {
+          font-size: 20px;
+          padding: 0;
+        }
        .entryLeft {
          float: left;
-         p {
+         p, h2 {
            text-align: right;
          }
          &:before {
-             right:-51px;
+             right:-108px;
          }
        }
        .entryRight {
          float: right;
-         p {
+         p, h2 {
            text-align: left;
          }
          &:before {
-             left:-45px;
+             left:-102px;
          }
        }
       .entry {
@@ -135,23 +138,58 @@ body {
             font-size: 13px;
           }
           &:before {
-              content: '';
-              position: absolute;
-              width:8px;
-              height:8px;
-              border:4px solid $timelineColor;
-              background-color:$timelineColor;
-              border-radius:100%;
-              transform:translateY(-50%);
-              margin-top: 7px;
-              z-index:1000;
-              @include fadeIn(box-shadow .4s);
+            background-image: url('../img/jobIcon.png');
+            background-size: 50px 50px;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            content:"";
+            position: absolute;
+            z-index:1000;
+            @include fadeIn(box-shadow .4s);
           }
           &:hover:before {
-            @include border-radius(10px);
-            @include box-shadow(0px 0px 10px 10px rgba(135, 222, 205, 0.67));
+
           }
       }
+
+      .grad {
+        &:before {
+            background-image: url('../img/gradIcon.png');
+        }
+      }
+
+      .diamond {
+        width: 0;
+      	height: 0;
+      	border: 15px solid transparent;
+      	border-bottom: 20px solid $timelineColor;
+      	position: relative;
+      	top: -30px;
+        left: 49.10%;
+        &:before {
+          background-image: none;
+        }
+        &:after {
+        	content: '';
+        	position: absolute;
+        	left: -15px;
+          top: 20px;
+        	width: 0;
+        	height: 0;
+        	border: 15px solid transparent;
+        	border-top: 20px solid $timelineColor;
+        }
+      }
+
+      .entry1 {
+          margin-top: 30px;
+      }
+    } //end of timeline
+
+    .experienceBkrd {
+      left: 0;
+      bottom: 0;
     }
 
   }

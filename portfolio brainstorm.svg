@@ -24,11 +24,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.8757698"
-     inkscape:cx="389.38324"
-     inkscape:cy="1798.6433"
+     inkscape:zoom="0.92888068"
+     inkscape:cx="392.78677"
+     inkscape:cy="1286.1156"
      inkscape:document-units="px"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer11"
      showgrid="false"
      units="px"
      showguides="false"
@@ -38,7 +38,8 @@
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:snap-nodes="false">
+     inkscape:snap-nodes="false"
+     inkscape:pagecheckerboard="true">
     <sodipodi:guide
        position="156.49469,163.94681"
        orientation="1,0"
@@ -653,7 +654,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -3167,7 +3168,10 @@
       <g
          style="display:inline;stroke-width:0.78888309"
          id="g50035"
-         transform="matrix(0.93505195,0,0,1.7184582,14.12292,-198.03315)">
+         transform="matrix(0.93505195,0,0,1.7184582,14.12292,-198.03315)"
+         inkscape:export-filename="C:\Users\Corrine\Documents\GitHub\portfolio\img\experience.png"
+         inkscape:export-xdpi="167.32916"
+         inkscape:export-ydpi="167.32916">
         <g
            id="g45974"
            style="stroke-width:0.78888309">
@@ -10019,7 +10023,10 @@
          id="rect6524"
          style="display:inline;opacity:1;fill:#eed7f4;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
       <g
-         id="g7533">
+         id="g7533"
+         inkscape:export-filename="C:\Users\Corrine\Documents\GitHub\portfolio\img\jobIcon.png"
+         inkscape:export-xdpi="167.32951"
+         inkscape:export-ydpi="167.32951">
         <circle
            style="opacity:1;fill:#eed7f4;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
            id="path6546"
@@ -10092,33 +10099,39 @@
              width="40.919788"
              id="rect8687-0" /></flowRegion><flowPara
            style="fill:#eed7f4;fill-opacity:1;stroke-width:0.61110896px"
-           id="flowPara8689-9"></flowPara></flowRoot>      <circle
-         r="3.7949133"
-         cy="193.00764"
-         cx="103.16671"
-         id="path6546-0-1"
-         style="opacity:1;fill:#eed7f4;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
-      <circle
-         r="3.2308044"
-         cy="193.00764"
-         cx="103.16671"
-         id="path6548-1-0"
-         style="opacity:1;fill:#222222;fill-opacity:1;stroke:none;stroke-width:0.26458329;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+           id="flowPara8689-9"></flowPara></flowRoot>      <g
+         id="g6799"
+         inkscape:export-filename="C:\Users\Corrine\Documents\GitHub\portfolio\img\gradIcon.png"
+         inkscape:export-xdpi="167.32916"
+         inkscape:export-ydpi="167.32916">
+        <circle
+           style="opacity:1;fill:#eed7f4;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path6546-0-1"
+           cx="103.16671"
+           cy="193.00764"
+           r="3.7949133" />
+        <circle
+           style="opacity:1;fill:#222222;fill-opacity:1;stroke:none;stroke-width:0.26458329;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           id="path6548-1-0"
+           cx="103.16671"
+           cy="193.00764"
+           r="3.2308044" />
+        <flowRoot
+           xml:space="preserve"
+           id="flowRoot6823"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#eed7f4;fill-opacity:1;stroke:none;stroke-width:0.63280523px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+           transform="matrix(0.41811181,0,0,0.41811181,-73.871675,-130.27146)"><flowRegion
+             id="flowRegion6825"
+             style="fill:#eed7f4;fill-opacity:1;stroke-width:0.63280523px"><rect
+               id="rect6827"
+               width="17.140135"
+               height="14.385483"
+               x="416.56662"
+               y="766.52209"
+               style="fill:#eed7f4;fill-opacity:1;stroke-width:0.63280523px" /></flowRegion><flowPara
+             id="flowPara6829"
+             style="fill:#eed7f4;fill-opacity:1;stroke-width:0.63280523px"></flowPara></flowRoot>      </g>
       <flowRoot
-         transform="matrix(0.41811181,0,0,0.41811181,-73.871675,-130.27146)"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.66666698px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#eed7f4;fill-opacity:1;stroke:none;stroke-width:0.63280523px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-         id="flowRoot6823"
-         xml:space="preserve"><flowRegion
-           style="fill:#eed7f4;fill-opacity:1;stroke-width:0.63280523px"
-           id="flowRegion6825"><rect
-             style="fill:#eed7f4;fill-opacity:1;stroke-width:0.63280523px"
-             y="766.52209"
-             x="416.56662"
-             height="14.385483"
-             width="17.140135"
-             id="rect6827" /></flowRegion><flowPara
-           style="fill:#eed7f4;fill-opacity:1;stroke-width:0.63280523px"
-           id="flowPara6829"></flowPara></flowRoot>      <flowRoot
          transform="matrix(0.26458333,0,0,0.26458333,88.049949,-209.35224)"
          style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:10.66666698px;line-height:1.25;font-family:'Source Sans Pro';-inkscape-font-specification:'Source Sans Pro, Light';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
          id="flowRoot8747-45-6"
@@ -10328,7 +10341,7 @@
          inkscape:connector-curvature="0"
          id="path4652-4"
          d="M 9.0445115,153.49444 H 29.219013 Z"
-         style="display:inline;fill:#d45e8c;fill-opacity:0.39215686;stroke:#87decc;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39215686" />
+         style="display:inline;fill:#d45e8c;fill-opacity:0.39215686;stroke:#87decc;stroke-width:0.30000001;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
     </g>
   </g>
   <g
