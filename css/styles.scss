@@ -73,7 +73,7 @@ body {
     color: $homeFontColor;
   }
 
-  h1, h2 {
+  h1, h2, h4 {
     font-family: $headingFont;
   }
 
@@ -99,6 +99,14 @@ body {
     h3 {
       text-align: center;
       font-weight: 300;
+    }
+
+    h4 {
+      font-size: 20px;
+      text-transform: uppercase;
+      span {
+        text-transform: none;
+      }
     }
 
   a {
@@ -145,6 +153,85 @@ body {
     }  //end of interests
 
   } //end of about
+
+  #projects {
+    #carousel-example-generic {
+      margin: 20px auto;
+    }
+
+    #carousel-custom {
+        margin: 20px auto;
+        .carousel-outer {
+            position: relative;
+            .item {
+              .skills {
+                padding: 2px 15px;
+                border-radius: .25em;
+                white-space: nowrap;
+                margin-bottom: 20px;
+              }
+              .html {
+                background-color: #aaffee;
+              }
+              .css {
+                background-color: #eed7f4;
+              }
+              .jquery {
+                background-color: #f4d7e3;
+              }
+              .js {
+                background-color: #ffe6d5;
+              }
+              .photoshop {
+                background-color: #c0e7ec;
+              }
+              .illustrator {
+                background-color: #fce9e3;
+              }
+              .bootStrap {
+                background-color: #ddc4ec;
+              }
+              .wordpress {
+                background-color: #ccf8e6;
+              }
+            }
+            .carousel-control.left, .carousel-control.right{
+              background-image: none;
+            }
+            .carousel-control {
+              top: 40%;
+              width: 5%;
+            }
+        }
+        .carousel-indicators {
+            margin: 10px 0 0;
+            overflow: auto;
+            position: static;
+            text-align: left;
+            white-space: nowrap;
+            width: 100%;
+            li {
+                background-color: transparent;
+                -webkit-border-radius: 0;
+                border-radius: 0;
+                display: inline-block;
+                height: auto;
+                margin: 0 !important;
+                width: auto;
+                img {
+                    display: block;
+                    opacity: 0.5;
+                }
+                .active img {
+                    opacity: 1;
+                }
+                &:hover img {
+                    opacity: 0.75;
+                }
+            }
+        }
+     }
+  }
 
   #experience {
     background-color: $darkBackground;
