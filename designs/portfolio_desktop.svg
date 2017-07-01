@@ -29,11 +29,11 @@
      showguides="false"
      units="px"
      showgrid="false"
-     inkscape:current-layer="layer14"
+     inkscape:current-layer="layer2"
      inkscape:document-units="px"
-     inkscape:cy="86.554408"
-     inkscape:cx="191.70198"
-     inkscape:zoom="3.4331104"
+     inkscape:cy="1216.4152"
+     inkscape:cx="435.67655"
+     inkscape:zoom="0.4291388"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -33670,12 +33670,18 @@
          inkscape:connector-curvature="0"
          id="rect15681"
          d="m 4.0500271,254.34751 c -0.09613,0 -0.192184,0.0334 -0.265854,0.10048 l -2.074267,1.88578 c -0.07513,0.0683 -0.111779,0.15784 -0.110299,0.24695 -0.0017,0.0892 0.03518,0.17865 0.110299,0.24697 l 2.074267,1.88586 c 0.147331,0.13395 0.384493,0.13395 0.531815,0 0.147322,-0.13394 0.147322,-0.34956 0,-0.4835 l -1.81398,-1.64933 1.81398,-1.64921 c 0.147322,-0.13394 0.147322,-0.34957 0,-0.48352 -0.07363,-0.067 -0.169836,-0.10048 -0.265961,-0.10048 z"
-         style="opacity:1;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.26458329;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+         style="opacity:1;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.26458329;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+         inkscape:export-filename="C:\Users\Corrine\Documents\GitHub\portfolio\img\leftArrow.png"
+         inkscape:export-xdpi="250"
+         inkscape:export-ydpi="250" />
       <path
          style="opacity:1;fill:#333333;fill-opacity:1;stroke:none;stroke-width:0.26458329;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
          d="m 205.87519,254.34751 c 0.0961,0 0.19218,0.0334 0.26585,0.10048 l 2.07427,1.88578 c 0.0751,0.0683 0.11177,0.15784 0.1103,0.24695 0.002,0.0892 -0.0352,0.17865 -0.1103,0.24697 l -2.07427,1.88586 c -0.14732,0.13395 -0.38449,0.13395 -0.53182,0 -0.14732,-0.13394 -0.14732,-0.34956 0,-0.4835 l 1.81398,-1.64933 -1.81398,-1.64921 c -0.14732,-0.13394 -0.14732,-0.34957 0,-0.48352 0.0737,-0.067 0.16984,-0.10048 0.26597,-0.10048 z"
          id="path15692"
-         inkscape:connector-curvature="0" />
+         inkscape:connector-curvature="0"
+         inkscape:export-filename="C:\Users\Corrine\Documents\GitHub\portfolio\img\rightArrow.png"
+         inkscape:export-xdpi="250"
+         inkscape:export-ydpi="250" />
       <g
          transform="translate(1.42474,-175.51)"
          id="g16798">
@@ -33867,7 +33873,7 @@
            id="g16585"
            transform="translate(-22.279383,-10.121151)">
           <rect
-             style="opacity:1;fill:#d1fae3;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+             style="opacity:1;fill:#c0e7ec;fill-opacity:1;stroke:none;stroke-width:0.26458332;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
              id="rect16535"
              width="25.100054"
              height="4.1315503"
