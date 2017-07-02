@@ -47,8 +47,9 @@ body {
   }
 
   .navbar-default {
-    background-color: transparent;
+    background-color: #222222;
     border-color: transparent;
+    border-bottom: 1px solid #444444;
   }
 
   .navbar li {
@@ -169,6 +170,9 @@ body {
                 border-radius: .25em;
                 white-space: nowrap;
                 margin-bottom: 20px;
+              }
+              .projectDescription {
+
               }
               .html {
                 background-color: #aaffee;
