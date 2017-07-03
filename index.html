@@ -164,7 +164,7 @@
       </div> <!-- end of row-->
     </div> <!-- end of contianer-->
 
-      <div id='carousel-custom' class='carousel slide' data-ride='carousel'>
+      <div id="projectSlider" class='carousel slide carousel-custom' data-ride='carousel'>
         <div class='carousel-outer'>
             <!-- Wrapper for slides -->
             <div class='carousel-inner'>
@@ -189,8 +189,11 @@
                       </div> <!-- end of col -->
 
                       <div class="col-md-6">
-                        <img class="img-responsive" src='img/projects/SFloginPreview.png' alt='Welcome | Stay Awhile' />
+                        <a class="modalImg" data-toggle="modal" data-target="#myModal">
+                          <img class="img-responsive" src='img/projects/SFloginPreview.png' alt='Welcome | Stay Awhile' />
+                        </a>
                       </div> <!-- end of col -->
+
                     </div> <!-- end of row-->
                   </div> <!-- end of container -->
 
@@ -411,11 +414,11 @@
 
 
             <!-- Controls -->
-            <a class='left carousel-control' href='#carousel-custom' data-slide='prev'>
+            <a class='left carousel-control' href='#projectSlider' data-slide='prev'>
                 <!--span class='glyphicon glyphicon-chevron-left'></span-->
                 <img src="img/leftArrow.png" />
             </a>
-            <a class='right carousel-control' href='#carousel-custom' data-slide='next'>
+            <a class='right carousel-control' href='#projectSlider' data-slide='next'>
                 <!--span class='glyphicon glyphicon-chevron-right'></span-->
                 <img src="img/rightArrow.png" />
             </a>
@@ -424,18 +427,19 @@
         <!-- Indicators -->
         <div class="container">
           <ol class='carousel-indicators mCustomScrollbar'>
-              <li data-target='#carousel-custom' data-slide-to='0' class='active'><img class="img-responsive" src='img/projects/SFloginThumbnail.png' alt='Welcome | Stay Awhile' /></li>
-              <li data-target='#carousel-custom' data-slide-to='1'><img class="img-responsive" src='img/projects/cemaThumbnail.png' alt='CEMA Summit 2016' /></li>
-              <li data-target='#carousel-custom' data-slide-to='2'><img class="img-responsive" src='img/projects/pureClubThumbnail.png' alt='Pure Performer''s Club 2016' /></li>
-              <li data-target='#carousel-custom' data-slide-to='3'><img class="img-responsive" src='img/projects/netscoutThumbnail.png' alt='Netscout Club 2016' /></li>
-              <li data-target='#carousel-custom' data-slide-to='4'><img class="img-responsive" src='img/projects/nutanixThumbnail.png' alt='Nutanix 2016' /></li>
-              <li data-target='#carousel-custom' data-slide-to='5'><img class="img-responsive" src='img/projects/ptbgThumbnail.png' alt='Passport to Battle Ground' /></li></li>
-              <li data-target='#carousel-custom' data-slide-to='6'><img class="img-responsive" src='img/projects/cmdcThumbnail.png' alt='CMDC Website Redesign' /></li>
-              <li data-target='#carousel-custom' data-slide-to='7'><img class="img-responsive" src='img/projects/ambassadorblogThumbnail.png' alt='Clark Ambassador Blog' /></li>
-              <li data-target='#carousel-custom' data-slide-to='8'><img class="img-responsive" src='img/projects/zendakoThumbnail.png' alt='Zendako' /></li>
+              <li data-target='#projectSlider' data-slide-to='0' class='active'><img class="img-responsive" src='img/projects/SFloginThumbnail.png' alt='Welcome | Stay Awhile' /></li>
+              <li data-target='#projectSlider' data-slide-to='1'><img class="img-responsive" src='img/projects/cemaThumbnail.png' alt='CEMA Summit 2016' /></li>
+              <li data-target='#projectSlider' data-slide-to='2'><img class="img-responsive" src='img/projects/pureClubThumbnail.png' alt='Pure Performer''s Club 2016' /></li>
+              <li data-target='#projectSlider' data-slide-to='3'><img class="img-responsive" src='img/projects/netscoutThumbnail.png' alt='Netscout Club 2016' /></li>
+              <li data-target='#projectSlider' data-slide-to='4'><img class="img-responsive" src='img/projects/nutanixThumbnail.png' alt='Nutanix 2016' /></li>
+              <li data-target='#projectSlider' data-slide-to='5'><img class="img-responsive" src='img/projects/ptbgThumbnail.png' alt='Passport to Battle Ground' /></li></li>
+              <li data-target='#projectSlider' data-slide-to='6'><img class="img-responsive" src='img/projects/cmdcThumbnail.png' alt='CMDC Website Redesign' /></li>
+              <li data-target='#projectSlider' data-slide-to='7'><img class="img-responsive" src='img/projects/ambassadorblogThumbnail.png' alt='Clark Ambassador Blog' /></li>
+              <li data-target='#projectSlider' data-slide-to='8'><img class="img-responsive" src='img/projects/zendakoThumbnail.png' alt='Zendako' /></li>
           </ol>
-      </div> <!-- end of container -->
-    </div> <!-- end of carousel-outer -->
+        </div> <!-- end of container -->
+      </div> <!-- end of carousel-outer -->
+    </div> <!-- end of  carousel custom -->
 
   </div> <!-- end of projects -->
 
@@ -543,7 +547,78 @@
     </footer>
   </div> <!-- end of contact -->
 
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div id="project1" class='carousel slide carousel-custom' data-interval="false">
+            <div class='carousel-outer'>
+                <!-- Wrapper for slides -->
+                <div class='carousel-inner'>
 
+                    <div class='item active'>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <img class="img-responsive" src='img/projects/SFlogin.png' alt='Login page' />
+                          </div> <!-- end of col -->
+                        </div> <!-- end of row-->
+                      </div> <!-- end of container -->
+
+                    </div>
+
+                    <div class='item'>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <img class="img-responsive" src='img/projects/indexCC.jpg' alt='Event Location 1' />
+                          </div> <!-- end of col -->
+                        </div> <!-- end of row-->
+                      </div> <!-- end of container -->
+                    </div>
+
+                    <div class='item'>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <img class="img-responsive" src='img/projects/indexPP.jpg' alt='Event Location 2' />
+                          </div> <!-- end of col -->
+                        </div> <!-- end of row-->
+                      </div> <!-- end of container -->
+                    </div>
+
+                    <div class='item'>
+                      <div class="container">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <img class="img-responsive" src='img/projects/indexEM.png' alt='Event Location 3' />
+                          </div> <!-- end of col -->
+                        </div> <!-- end of row-->
+                      </div> <!-- end of container -->
+                    </div>
+                  <!-- Controls -->
+                  <a class='left carousel-control' href='#project1' data-slide='prev'>
+                      <!--span class='glyphicon glyphicon-chevron-left'></span-->
+                      <img src="img/leftArrow.png" />
+                  </a>
+                  <a class='right carousel-control' href='#project1' data-slide='next'>
+                      <!--span class='glyphicon glyphicon-chevron-right'></span-->
+                      <img src="img/rightArrow.png" />
+                  </a>
+              </div>
+
+            </div> <!-- end of carousel-outer -->
+          </div> <!-- end of  carousel custom -->
+        </div>
+      </div>
+    </div>
+  </div>
 
   <script src="js/custom.js"></script>
 
