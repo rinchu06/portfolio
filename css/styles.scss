@@ -92,9 +92,6 @@ body {
     margin: 0;
     color: $darkText;
     padding: 50px 0 10px 0;
-      span {
-          border-bottom: 2px solid $linkColor;
-      }
     }
 
     h3 {
@@ -110,12 +107,25 @@ body {
       }
     }
 
+    .sectionHeading {
+      span {
+          border-bottom: 2px solid $linkColor;
+      }
+    }
+
   a {
     font-family: $headingFont;
     color: $linkColor;
     &:hover {
       color: $linkColor;
     }
+  }
+
+  .carousel-control.left, .carousel-control.right{
+    background-image: none;
+  }
+  .carousel-control {
+    top: 300px;
   }
 
   #home {
@@ -159,7 +169,6 @@ body {
     #carousel-example-generic {
       margin: 20px auto;
     }
-
     .carousel-custom {
         margin: 20px auto;
         .carousel-outer {
@@ -167,14 +176,16 @@ body {
             .carousel-inner {
               height: 410px;
               .item {
+                img {
+                  &:hover {
+                    cursor: pointer;
+                  }
+                }
                 .skills {
                   padding: 2px 15px;
                   border-radius: .25em;
                   white-space: nowrap;
                   margin-bottom: 20px;
-                }
-                .projectDescription {
-
                 }
                 .html {
                   background-color: #aaffee;
@@ -362,14 +373,28 @@ body {
     }
   }//end of contact
 
+.modal {
   .modal-dialog {
       width: 80%;
+      .modal-header {
+        border-bottom: transparent;
+        .close {
+          font-size: 50px;
+          line-height: .5;
+        }
+      }
+      .modal-body {
+        padding: 0;
+        h4 {
+          padding-bottom: 15px;
+        }
+        img {
+          margin: 0 auto;
+          border: 1px solid #eeeeee;
+        }
+      }
   }
-  .carousel-control.left, .carousel-control.right{
-    background-image: none;
-  }
-  .carousel-control {
-    top: 300px;
-  }
+}
+
 
 }
