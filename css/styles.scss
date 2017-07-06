@@ -3,6 +3,7 @@ $bodyFont: 'Source Sans Pro', sans-serif;
 $homeFontColor: #ffffff;
 $darkBackground: #222222;
 $borderColor: #87decc;
+$borderRGBA: rgba(135, 222, 204, 1);
 $timelineColor: #eed7f4;
 $linkColor: #87decc;
 $darkText: #666666;
@@ -174,11 +175,16 @@ body {
         .carousel-outer {
             position: relative;
             .carousel-inner {
-              height: 410px;
+              height: 450px;
               .item {
-                img {
-                  &:hover {
-                    cursor: pointer;
+                .modalImg {
+                  img {
+                    margin: 15px auto;
+                    &:hover {
+                      cursor: pointer;
+                      @include box-shadow(0px 4px 29px 8px $borderRGBA);
+                      @include fadeIn(box-shadow .4s);
+                    }
                   }
                 }
                 .skills {
@@ -212,7 +218,6 @@ body {
                   background-color: #ccf8e6;
                 }
               }
-
               .carousel-control {
                 top: 40%;
                 width: 5%;
@@ -384,7 +389,7 @@ body {
         }
       }
       .modal-body {
-        padding: 0;
+        padding: 0 0 50px 0;
         h4 {
           padding-bottom: 15px;
         }
