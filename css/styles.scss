@@ -27,34 +27,42 @@ $lightText: #ffffff;
    box-shadow: $shadowParameters;
 }
 
-@mixin fadeIn($fadeInParameters) {
-  -webkit-transition: $fadeInParameters;
-  -moz-transition: $fadeInParameters;
-  -o-transition: $fadeInParameters;
-  transition: $fadeInParameters;
+@mixin animation($animate...) {
+    $max: length($animate);
+    $animations: '';
+
+    @for $i from 1 through $max {
+        $animations: #{$animations + nth($animate, $i)};
+
+        @if $i < $max {
+            $animations: #{$animations + ", "};
+        }
+    }
+    -webkit-animation: $animations;
+    -moz-animation:    $animations;
+    -o-animation:      $animations;
+    animation:         $animations;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+        @content;
+    }
+    @-moz-keyframes #{$animationName} {
+        @content;
+    }
+    @-o-keyframes #{$animationName} {
+        @content;
+    }
+    @keyframes #{$animationName} {
+        @content;
+    }
 }
 
 @mixin grow($scale) {
   -webkit-transform: scale($scale);
   -ms-transform: scale($scale);
   transform: scale($scale);
-}
-
-@keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Firefox */
-@-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-}
-
-/* Safari and Chrome */
-@-webkit-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
 }
 
 body {
@@ -74,28 +82,32 @@ body {
     background-color: #222222;
     border-color: transparent;
     border-bottom: 1px solid #444444;
-  }
-
-  .navbar li {
-    font-size: 20px;
-    text-transform: uppercase;
-  }
-
-//figure out how to nest this
-  .navbar-default .navbar-nav>li>a {
-    color: $homeFontColor;
-    &:hover {
-      color: $homeFontColor;
-      text-decoration: underline;
+    .navbar, .navbar-nav {
+      li {
+      font-size: 20px;
+      text-transform: uppercase;
+        a {
+          color: $homeFontColor;
+          &:hover {
+            color: $homeFontColor;
+            text-decoration: underline;
+          }
+        }
+      }
+      .active {
+        a {
+          text-decoration: underline;
+          background-color: transparent;
+          color: $homeFontColor;
+          &:focus,
+          &:hover {
+            text-decoration: underline;
+            background-color: transparent;
+            color: $homeFontColor;
+          }
+        }
+      }
     }
-  }
-
-  .navbar-default .navbar-nav>.active>a,
-  .navbar-default .navbar-nav>.active>a:focus,
-  .navbar-default .navbar-nav>.active>a:hover {
-    text-decoration: underline;
-    background-color: transparent;
-    color: $homeFontColor;
   }
 
   h1, h2, h4 {
@@ -152,6 +164,36 @@ body {
     top: 300px;
   }
 
+  @include keyframes(fadeIn1) {
+    0% { opacity:0; }
+    30% { opacity:0; }
+    100% { opacity:1; }
+  }
+
+  @include keyframes(fadeIn2) {
+    0% { opacity:0; }
+    60% { opacity:0; }
+    100% { opacity:1; }
+  }
+
+  @include keyframes(fadeIn3) {
+    0% { opacity:0; }
+    90% { opacity:0; }
+    100% { opacity:1; }
+  }
+
+  .fadeIn1 {
+    @include animation(fadeIn1 2s);
+  }
+
+  .fadeIn2 {
+    @include animation(fadeIn2 2s);
+  }
+
+  .fadeIn3 {
+    @include animation(fadeIn3 2s);
+  }
+
   #home {
     background: url("../img/home.png") no-repeat center center;
     background-size: cover;
@@ -206,8 +248,6 @@ body {
                     transition:all 0.3s ease;
                     &:hover {
                       cursor: pointer;
-                      //@include box-shadow(0px 4px 29px 8px $borderRGBA);
-                      //@include fadeIn(box-shadow .4s);
                       @include grow(1.05);
                     }
                   }
@@ -341,7 +381,7 @@ body {
             content:"";
             position: absolute;
             z-index:1000;
-            @include fadeIn(box-shadow .4s);
+            @include animation(box-shadow .4s);
           }
           &:hover:before {
 
@@ -398,6 +438,7 @@ body {
         margin-right: 10px;
         img {
           transition:all 0.3s ease;
+          width: 50px;
           &:hover {
             @include grow(1.10);
           }
