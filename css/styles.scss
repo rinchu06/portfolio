@@ -70,6 +70,10 @@ body {
   font-weight: 300;
   font-size: 18px;
 
+  .section {
+    padding: 0 20px;
+  }
+
   .darkBackground {
     background-color: $darkBackground;
     color: $lightText;
@@ -118,9 +122,14 @@ body {
     z-index: 1;
     font-size: 75px;
     margin: 0;
-    line-height: 1.75em;
-    padding: 250px 0;
     color: $darkText;
+    line-height: 2em;
+    @media (max-width: 992px) {
+      font-size: 60px;
+    }
+    @media (max-width: 650px) {
+      font-size: 40px;
+    }
   }
 
   h2 {
@@ -133,6 +142,10 @@ body {
     h3 {
       text-align: center;
       font-weight: 300;
+      line-height: 1.5em;
+      @media (max-width: 500px) {
+        font-size: 20px;
+      }
     }
 
     h4 {
@@ -198,10 +211,15 @@ body {
   #home {
     background: url("../img/home.png") no-repeat center center;
     background-size: cover;
+    .homeText {
+      padding: 300px 0;
+      @media (max-width: 1280px) {
+        padding: 150px 0;
+      }
+    }
   }//end of home
 
   #about {
-    padding: 50px;
     .aboutDescription {
         border-bottom: 2px solid $borderColor;
         padding-bottom: 30px;
@@ -216,9 +234,16 @@ body {
       padding: 0 0 30px 0;
       ul {
         text-align: center;
+        @media (max-width: 540px) {
+          padding: 0;
+        }
         li {
           display: inline-block;
           margin-right: 10px;
+          @media (max-width: 540px) {
+            width: 25%;
+            vertical-align: top;
+          }
           img {
             display: inline;
           }
@@ -282,11 +307,53 @@ body {
                 .wordpress {
                   background-color: #ccf8e6;
                 }
+                @media (max-width: 1300px) {
+                  .container {
+                    width: 970px;
+                  }
+                }
+                @media (max-width: 1150px) {
+                  .container {
+                    width: 800px;
+                  }
+                }
+                @media (max-width: 900px) {
+                  .container {
+                    width: 600px;
+                  }
+                }
+                @media (max-width: 685px) {
+                  .container {
+                    width: 450px;
+                  }
+                }
+                @media (max-width: 540px) {
+                  .container {
+                    width: 450px;
+                  }
+                }
               }
               .carousel-control {
                 top: 40%;
                 width: 5%;
               }
+              @media (max-width: 1300px) {
+                .carousel-control {
+                  width: 10%;
+                }
+              }
+              @media (max-width: 991px) {
+                .carousel-control {
+                  width: 5%;
+                }
+              }
+            }//end of carousel inner
+            @media (max-width: 991px) {
+              .carousel-inner {
+                height: initial;
+                height: auto;
+              }
+
             }
         }
         .carousel-indicators {
@@ -426,6 +493,9 @@ body {
       right: 0;
       bottom: 0;
       position: absolute;
+      @media (max-width: 1200px) {
+        width: 40%;
+      }
     }
 
   }//end of experience
@@ -445,10 +515,11 @@ body {
         }
       }
     }
-    footer {
-      padding: 20px;
-    }
   }//end of contact
+
+  footer {
+    padding: 20px;
+  }
 
   .modal {
     .modal-dialog {
@@ -483,5 +554,13 @@ body {
         }
     }
   }//end of modal
+
+  @media (max-width: 1024px){
+    .container {
+         width: auto;
+         width: initial;
+    }
+  }
+
 
 }// end of body

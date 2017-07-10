@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Corrine Nightingale Portfolio</title>
   <meta name="description" content="Corrine Nightingale Portfolio">
@@ -21,7 +22,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
-  <div id="home">
+  <div id="home" class="section">
     <div class="container">
       <nav id="myNavbar" class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
@@ -49,14 +50,18 @@
         </div><!-- /.container-fluid -->
       </nav>
 
-      <h1><span class="fadeIn1">Hi.</span><br/>
-      <span class="fadeIn2">I'm Corrine.</span><br/>
-      <span class="fadeIn3">I like making things pretty.</span></h1>
+      <div class="container">
+        <div class="homeText">
+          <h1><span class="fadeIn1">Hi.</span></h1>
+          <h1><span class="fadeIn2">I'm Corrine.</span></h1>
+          <h1><span class="fadeIn3">I like making things pretty.</span></h1>
+        </div>
+      </div>
 
     </div>
   </div>
 
-  <div id="about" class="darkBackground">
+  <div id="about" class="darkBackground section">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -155,7 +160,7 @@
     </div> <!-- end of container -->
   </div> <!-- end of about -->
 
-  <div id="projects">
+  <div id="projects"  class="section">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -171,7 +176,7 @@
                 <div class='item active'>
                   <div class="container">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <h4>Project: <br/><span>Salesforce Incentive Trip</span></h4>
 
                         <h4>Organization: <br/><span>Opus Agency</span></h4>
@@ -188,13 +193,28 @@
 
                       </div> <!-- end of col -->
 
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <a class="modalImg" data-toggle="modal" data-target="#salesforceModal">
                           <img class="img-responsive" src='img/projects/SFloginPreview.png' alt='Welcome | Stay Awhile' />
                         </a>
                       </div> <!-- end of col -->
 
                     </div> <!-- end of row-->
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="controlContainer">
+                          <!-- Controls -->
+                          <a class='left carousel-control' href='#projectSlider' data-slide='prev'>
+                              <span>Previous</span>
+                          </a>
+                          <a class='right carousel-control' href='#projectSlider' data-slide='next'>
+                              <span>Next</span>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
                   </div> <!-- end of container -->
 
                 </div>
@@ -202,7 +222,7 @@
                 <div class='item'>
                   <div class="container">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <h4>Project: <br/><span>CEMA Summit</span></h4>
 
                         <h4>Organization: <br/><span>Opus Agency</span></h4>
@@ -219,19 +239,34 @@
 
                       </div> <!-- end of col -->
 
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <a class="modalImg" data-toggle="modal" data-target="#cemaModal">
                           <img class="img-responsive" src='img/projects/cema.png' alt='CEMA Summit 2016' />
                         </a>
                       </div> <!-- end of col -->
                     </div> <!-- end of row-->
+
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="controlContainer">
+                          <!-- Controls -->
+                          <a class='left carousel-control' href='#projectSlider' data-slide='prev'>
+                              Previous
+                          </a>
+                          <a class='right carousel-control' href='#projectSlider' data-slide='next'>
+                              Next
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+
                   </div> <!-- end of container -->
                 </div>
 
                 <div class='item'>
                   <div class="container">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <h4>Project: <br/><span>Pure Performer's Club</span></h4>
 
                         <h4>Organization: <br/><span>Opus Agency</span></h4>
@@ -248,7 +283,7 @@
 
                       </div> <!-- end of col -->
 
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <a class="modalImg" data-toggle="modal" data-target="#pureModal">
                           <img class="img-responsive" src='img/projects/pureClubPreview.png' alt='Pure Performer''s Club 2016' />
                         </a>
@@ -260,7 +295,7 @@
                 <div class='item'>
                   <div class="container">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <h4>Project: <br/><span>Netscout Club</span></h4>
 
                         <h4>Organization: <br/><span>Opus Agency</span></h4>
@@ -277,7 +312,7 @@
 
                       </div> <!-- end of col -->
 
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <a class="modalImg" data-toggle="modal" data-target="#netscoutModal">
                           <img class="img-responsive" src='img/projects/netscout.png' alt='Netscout Club 2016' />
                         </a>
@@ -289,7 +324,7 @@
                 <div class='item'>
                   <div class="container">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <h4>Project: <br/><span>Nutanix Sales Conference</span></h4>
 
                         <h4>Organization: <br/><span>Opus Agency</span></h4>
@@ -306,7 +341,7 @@
 
                       </div> <!-- end of col -->
 
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <a class="modalImg" data-toggle="modal" data-target="#nutanixModal">
                           <img class="img-responsive" src='img/projects/nutanix.png' alt='Nutanix 2016' />
                         </a>
@@ -318,7 +353,7 @@
                 <div class='item'>
                   <div class="container">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <h4>Project: <br/><span>Passport to Battle Ground</span></h4>
 
                         <h4>Organization: <br/><span>Battle Ground Chamber of Commerce</span></h4>
@@ -337,7 +372,7 @@
 
                       </div> <!-- end of col -->
 
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <a class="modalImg" data-toggle="modal" data-target="#passportModal">
                           <img class="img-responsive" src='img/projects/ptbg.png' alt='Passport to Battle Ground' />
                         </a>
@@ -349,7 +384,7 @@
                 <div class='item'>
                   <div class="container">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <h4>Project: <br/><span> CMDC Website Redesign</span></h4>
 
                         <h4>Organization: <br/><span> Washington State University (WSU) Vancouver</span></h4>
@@ -364,7 +399,7 @@
 
                       </div> <!-- end of col -->
 
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <a class="modalImg" data-toggle="modal" data-target="#cmdcModal">
                           <img class="img-responsive" src='img/projects/cmdc.png' alt='CMDC Website Redesign' />
                         </a>
@@ -376,7 +411,7 @@
                 <div class='item'>
                   <div class="container">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <h4>Project: <br/><span><a href="https://clarkambassadors.wordpress.com/" target="_blank">Clark Ambassador Blog</a></span></h4>
 
                         <h4>Organization: <br/><span> Clark College</span></h4>
@@ -391,7 +426,7 @@
 
                       </div> <!-- end of col -->
 
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <a class="modalImg" data-toggle="modal" data-target="#clarkModal">
                           <img class="img-responsive" src='img/projects/ambassadorblogPreview.png' alt='Clark Ambassador Blog' />
                         </a>
@@ -403,7 +438,7 @@
                 <div class='item'>
                   <div class="container">
                     <div class="row">
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <h4>Project: <br/><span><a href="http://www.zendako.com/" target="_blank">Zendako</a></span></h4>
 
                         <h4>Organization: <br/><span> Zendako</span></h4>
@@ -419,7 +454,7 @@
 
                       </div> <!-- end of col -->
 
-                      <div class="col-md-6">
+                      <div class="col-md-6 col-sm-12">
                         <a class="modalImg" data-toggle="modal" data-target="#zendakoModal">
                           <img class="img-responsive" src='img/projects/zendakoPreview.png' alt='Zendako' />
                         </a>
@@ -430,14 +465,16 @@
 
 
             <!-- Controls -->
-            <a class='left carousel-control' href='#projectSlider' data-slide='prev'>
-                <!--span class='glyphicon glyphicon-chevron-left'></span-->
-                <img src="img/leftArrow.png" />
-            </a>
-            <a class='right carousel-control' href='#projectSlider' data-slide='next'>
-                <!--span class='glyphicon glyphicon-chevron-right'></span-->
-                <img src="img/rightArrow.png" />
-            </a>
+            <!--<div class="container">
+              <a class='left carousel-control' href='#projectSlider' data-slide='prev'>
+
+                  <img src="img/leftArrow.png" />
+              </a>
+              <a class='right carousel-control' href='#projectSlider' data-slide='next'>
+                
+                  <img src="img/rightArrow.png" />
+              </a>
+           </div>-->
         </div>
 
         <!-- Indicators -->
@@ -459,7 +496,7 @@
 
   </div> <!-- end of projects -->
 
-  <div id="experience" class="darkBackground">
+  <div id="experience" class="darkBackground section">
     <div class="container">
       <h2 class="sectionHeading"><span>Experience</span></h2>
 
@@ -534,7 +571,7 @@
   </div> <!-- end of experience -->
 
 
-  <div id="contact">
+  <div id="contact" class="section">
     <div class="container">
 
       <div class="row">
@@ -551,17 +588,18 @@
       </div> <!-- end of row-->
 
     </div> <!-- end of container -->
-
-    <footer class="darkBackground">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-md-12">
-              <p>Designed and developed by Corrine Nightingale &copy;</p>
-          </div> <!-- end of col -->
-        </div> <!-- end of row-->
-      </div> <!-- end of container-->
-    </footer>
   </div> <!-- end of contact -->
+
+
+      <footer class="darkBackground">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-12">
+                <p>Designed and developed by Corrine Nightingale &copy;</p>
+            </div> <!-- end of col -->
+          </div> <!-- end of row-->
+        </div> <!-- end of container-->
+      </footer>
 
   <!-- Modals -->
   <div class="modal fade" id="salesforceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -581,7 +619,7 @@
                     <div class='item active'>
                             <h4 class="sectionHeading"><span>Salesforce Event Login Page</span></h4>
                             <img class="img-responsive" src='img/projects/SFlogin.png' alt='Login page' />
-                          
+
                     </div>
 
                     <div class='item'>
@@ -898,6 +936,17 @@
                           <div class="col-md-12">
                             <h4 class="sectionHeading"><span>Mobile Design</span></h4>
                             <img class="img-responsive" src='img/projects/cmdcmobile.png' alt='CMDC Mobile Design' />
+
+                            <div class="controlContainer">
+                              <!-- Controls -->
+                              <a class='left carousel-control' href='#project3' data-slide='prev'>
+                                  Previous
+                              </a>
+                              <a class='right carousel-control' href='#project3' data-slide='next'>
+                                  Next
+                              </a>
+                            </div>
+
                           </div> <!-- end of col -->
                         </div> <!-- end of row-->
                       </div> <!-- end of container -->
