@@ -130,6 +130,9 @@ body {
     @media (max-width: 650px) {
       font-size: 40px;
     }
+    @media (max-width: 375px) {
+      font-size: 30px;
+    }
   }
 
   h2 {
@@ -174,9 +177,6 @@ body {
     background-image: none;
   }
 
-  .carousel-control {
-    top: 300px;
-  }
 
   @include keyframes(fadeIn1) {
     0% { opacity:0; }
@@ -265,15 +265,21 @@ body {
         .carousel-outer {
             position: relative;
             .carousel-inner {
-              height: 450px;
+              //height: 500px;
               .item {
                 .modalImg {
                   img {
                     margin: 15px auto;
                     transition:all 0.3s ease;
+                    float: right;
                     &:hover {
                       cursor: pointer;
                       @include grow(1.05);
+                    }
+                  }
+                  @media (max-width: 991px) {
+                    img {
+                      float: none;
                     }
                   }
                 }
@@ -307,46 +313,44 @@ body {
                 .wordpress {
                   background-color: #ccf8e6;
                 }
-                @media (max-width: 1300px) {
-                  .container {
-                    width: 970px;
-                  }
-                }
-                @media (max-width: 1150px) {
-                  .container {
-                    width: 800px;
-                  }
-                }
-                @media (max-width: 900px) {
-                  .container {
-                    width: 600px;
-                  }
-                }
-                @media (max-width: 685px) {
-                  .container {
-                    width: 450px;
-                  }
-                }
-                @media (max-width: 540px) {
-                  .container {
-                    width: 450px;
-                  }
-                }
               }
-              .carousel-control {
-                top: 40%;
-                width: 5%;
-              }
-              @media (max-width: 1300px) {
+              .controlContainer {
+                background: url(../img/controlBkgd.png) no-repeat center;
+                background-size: contain;
+                display: table;
+                width: 100%;
+                padding: 5px;
+                margin: 20px 0;
                 .carousel-control {
-                  width: 10%;
+                  font-family: $bodyFont;
+                  color: $darkText;
+                  opacity: 1;
+                  text-shadow: none;
+                  position: relative;
+                  &:hover {
+                    text-decoration: underline;
+                  }
+                }
+                @media (max-width: 450px) {
+                  .carousel-control {
+                    font-size: 18px;
+                  }
+                }
+                .left {
+                  float: left;
+                }
+                .right {
+                  float: right;
                 }
               }
-              @media (max-width: 991px) {
-                .carousel-control {
-                  width: 5%;
+
+              @media (max-width: 768px) {
+                .controlContainer {
+                  background-size: cover;
+                  border-radius: .25em;
                 }
               }
+
             }//end of carousel inner
             @media (max-width: 991px) {
               .carousel-inner {
@@ -375,12 +379,14 @@ body {
                     display: block;
                     opacity: 0.5;
                 }
-                .active img {
-                    opacity: 1;
-                }
                 &:hover img {
-                    opacity: 0.75;
+                    opacity: .75;
                 }
+            }
+            .active {
+              img {
+                opacity: .75;
+              }
             }
         }
      }
@@ -411,6 +417,11 @@ body {
         h2 {
           font-size: 20px;
           padding: 0;
+        }
+        @media (max-width: 1199px) {
+          h2  {
+            font-size: 18px;
+          }
         }
        .entryLeft {
          float: left;
@@ -450,9 +461,12 @@ body {
             z-index:1000;
             @include animation(box-shadow .4s);
           }
-          &:hover:before {
+      }
 
-          }
+      @media (max-width: 1199px) {
+        .entry   {
+          padding:0 0 40px 0;
+        }
       }
 
       .grad {
@@ -483,7 +497,31 @@ body {
         	border-top: 20px solid $timelineColor;
         }
       }
-
+      @media (max-width: 1199px) {
+        .diamond  {
+          left: 48.8%;
+        }
+      }
+      @media (max-width: 900px) {
+        .diamond  {
+          left: 48.7%;
+        }
+      }
+      @media (max-width: 768px) {
+        .diamond  {
+          left: 48.5%;
+        }
+      }
+      @media (max-width: 500px) {
+        .diamond  {
+          left: 48%;
+        }
+      }
+      @media (max-width: 414px) {
+        .diamond  {
+          left: 46.5%;
+        }
+      }
       .entry1 {
           margin-top: 30px;
       }
@@ -526,6 +564,10 @@ body {
         width: 80%;
         .modal-header {
           border-bottom: transparent;
+          h4 {
+            padding-bottom: 15px;
+            float: left;
+          }
           .close {
             font-size: 50px;
             line-height: .5;
@@ -533,10 +575,7 @@ body {
         }
         .modal-body {
           padding: 0 0 50px 0;
-          .container {
-            h4 {
-              padding-bottom: 15px;
-            }
+
             img {
               margin: 0 auto;
               border: 1px solid #eeeeee;
@@ -544,15 +583,12 @@ body {
             @media (max-width: 1460px) {
               width: 970px;
             }
-
-          }
-          .carousel-control {
-            @media (max-width: 1460px) {
-              width: 5%;
+            .carousel-control {
+              top: 300px;
             }
-          }
-        }
-    }
+
+        }//end of modal body
+    }//end of modal dialog
   }//end of modal
 
   @media (max-width: 1024px){
@@ -564,3 +600,9 @@ body {
 
 
 }// end of body
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
