@@ -2,6 +2,7 @@ $headingFont: 'Bubbler One', sans-serif;
 $bodyFont: 'Source Sans Pro', sans-serif;
 $homeFontColor: #ffffff;
 $darkBackground: #222222;
+$lightBackground: #ffffff;
 $borderColor: #87decc;
 $borderRGBA: rgba(135, 222, 204, 1);
 $timelineColor: #eed7f4;
@@ -265,7 +266,7 @@ body {
         .carousel-outer {
             position: relative;
             .carousel-inner {
-              //height: 500px;
+              height: 450px;
               .item {
                 .modalImg {
                   img {
@@ -314,42 +315,6 @@ body {
                   background-color: #ccf8e6;
                 }
               }
-              .controlContainer {
-                background: url(../img/controlBkgd.png) no-repeat center;
-                background-size: contain;
-                display: table;
-                width: 100%;
-                padding: 5px;
-                margin: 20px 0;
-                .carousel-control {
-                  font-family: $bodyFont;
-                  color: $darkText;
-                  opacity: 1;
-                  text-shadow: none;
-                  position: relative;
-                  &:hover {
-                    text-decoration: underline;
-                  }
-                }
-                @media (max-width: 450px) {
-                  .carousel-control {
-                    font-size: 18px;
-                  }
-                }
-                .left {
-                  float: left;
-                }
-                .right {
-                  float: right;
-                }
-              }
-
-              @media (max-width: 768px) {
-                .controlContainer {
-                  background-size: cover;
-                  border-radius: .25em;
-                }
-              }
 
             }//end of carousel inner
             @media (max-width: 991px) {
@@ -378,9 +343,11 @@ body {
                 img {
                     display: block;
                     opacity: 0.5;
+                    transition:all 0.3s ease;
                 }
                 &:hover img {
-                    opacity: .75;
+                    opacity: 1;
+                    @include grow(1.05);
                 }
             }
             .active {
@@ -390,6 +357,11 @@ body {
             }
         }
      }
+     @media (max-width: 768px) {
+       .carousel-custom {
+         margin: 0px auto;
+      }
+    }
   }//end of projects
 
   #experience {
@@ -562,39 +534,119 @@ body {
   .modal {
     .modal-dialog {
         width: 80%;
-        .modal-header {
-          border-bottom: transparent;
-          h4 {
-            padding-bottom: 15px;
-            float: left;
-          }
-          .close {
-            font-size: 50px;
-            line-height: .5;
-          }
-        }
-        .modal-body {
-          padding: 0 0 50px 0;
+        .modal-content {
+          background-color: $darkBackground;
+          border: 1px solid #333333;
+          .modal-header {
+            border-bottom: transparent;
+            h4 {
+              padding: 15px 0 15px 25px;
+              margin: 0;
+              background-color: $darkBackground;
+              color: $lightText;
+              float: left;
+            }
+            @media (max-width: 400px) {
+              h4 {
+                font-size: 18px;
+              }
+            }
+            .close {
+              font-size: 50px;
+              line-height: .5;
+              color: $lightText;
+              opacity: 1;
+              transition:all 0.3s ease;
+              &:hover {
+                opacity: .75;
+                @include grow(1.10);
+              }
+            }
+          }//end of modal header
 
+          .modal-body {
+            padding: 0;
+            background-color: $lightBackground;
+
+            .imgContainer{
+              padding: 25px 0;
+              img {
+                margin: 0 auto;
+                border: 1px solid #eeeeee;
+                width: 80%;
+                background-color: #ffffff;
+              }
+            }
+
+          }//end of modal body
+
+          .modal-footer {
             img {
-              margin: 0 auto;
-              border: 1px solid #eeeeee;
+              width: 50px;
+              float: right;
+              transition:all 0.3s ease;
+              &:hover {
+                @include grow(1.10);
+              }
             }
-            @media (max-width: 1460px) {
-              width: 970px;
-            }
-            .carousel-control {
-              top: 300px;
-            }
+          }
+        }//end of modal content
 
-        }//end of modal body
     }//end of modal dialog
+    @media (max-width: 767px) {
+      .modal-dialog {
+        margin: 0 auto;
+      }
+    }
   }//end of modal
 
   @media (max-width: 1024px){
     .container {
          width: auto;
          width: initial;
+    }
+  }
+
+  .controlContainer {
+    background: url(../img/controlBkgd.png) no-repeat center;
+    background-size: contain;
+    display: table;
+    width: 100%;
+    padding: 5px;
+    margin: 20px 0;
+    .carousel-control {
+      font-family: $bodyFont;
+      color: $darkText;
+      opacity: 1;
+      text-shadow: none;
+      position: relative;
+      text-transform: uppercase;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    @media (max-width: 450px) {
+      .carousel-control {
+        font-size: 18px;
+      }
+    }
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+  }
+  .modal-body {
+    .controlContainer {
+      background-size: cover;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .controlContainer {
+      background-size: cover;
+      border-radius: .25em;
     }
   }
 

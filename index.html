@@ -174,6 +174,20 @@
 
             <!-- Wrapper for slides -->
             <div class='carousel-inner'>
+              <!-- Indicators -->
+              <div class="container hidden-lg hidden-md">
+                <ol class='carousel-indicators mCustomScrollbar'>
+                    <li data-target='#projectSlider' data-slide-to='0' class='active'><img class="img-responsive" src='img/projects/SFloginThumbnail.png' alt='Welcome | Stay Awhile' /></li>
+                    <li data-target='#projectSlider' data-slide-to='1'><img class="img-responsive" src='img/projects/cemaThumbnail.png' alt='CEMA Summit 2016' /></li>
+                    <li data-target='#projectSlider' data-slide-to='2'><img class="img-responsive" src='img/projects/pureClubThumbnail.png' alt='Pure Performer''s Club 2016' /></li>
+                    <li data-target='#projectSlider' data-slide-to='3'><img class="img-responsive" src='img/projects/netscoutThumbnail.png' alt='Netscout Club 2016' /></li>
+                    <li data-target='#projectSlider' data-slide-to='4'><img class="img-responsive" src='img/projects/nutanixThumbnail.png' alt='Nutanix 2016' /></li>
+                    <li data-target='#projectSlider' data-slide-to='5'><img class="img-responsive" src='img/projects/ptbgThumbnail.png' alt='Passport to Battle Ground' /></li></li>
+                    <li data-target='#projectSlider' data-slide-to='6'><img class="img-responsive" src='img/projects/cmdcThumbnail.png' alt='CMDC Website Redesign' /></li>
+                    <li data-target='#projectSlider' data-slide-to='7'><img class="img-responsive" src='img/projects/ambassadorblogThumbnail.png' alt='Clark Ambassador Blog' /></li>
+                    <li data-target='#projectSlider' data-slide-to='8'><img class="img-responsive" src='img/projects/zendakoThumbnail.png' alt='Zendako' /></li>
+                </ol>
+              </div> <!-- end of indicators container -->
 
                 <div class='item active'>
                   <div class="container">
@@ -455,7 +469,7 @@
 
 
             <!-- Controls -->
-          <div class="container">
+          <div class="container hidden-lg hidden-md">
             <div class="controlContainer">
               <a class='left carousel-control' href='#projectSlider' data-slide='prev'>
                 <span>Previous</span>
@@ -468,7 +482,7 @@
         </div>
 
         <!-- Indicators -->
-        <div class="container">
+        <div class="container hidden-sm hidden-xs">
           <ol class='carousel-indicators mCustomScrollbar'>
               <li data-target='#projectSlider' data-slide-to='0' class='active'><img class="img-responsive" src='img/projects/SFloginThumbnail.png' alt='Welcome | Stay Awhile' /></li>
               <li data-target='#projectSlider' data-slide-to='1'><img class="img-responsive" src='img/projects/cemaThumbnail.png' alt='CEMA Summit 2016' /></li>
@@ -593,97 +607,125 @@
 
       <!-- Modals -->
       <div class="modal fade" id="salesforceModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" id="salesforceModalBTT" role="document">
           <div class="modal-content">
             <div class="modal-header">
+              <h4 class="sectionHeading"><span>Salesforce Event 2017 Website</span></h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-            </div>
+            </div> <!-- end of modal-header -->
             <div class="modal-body">
               <div id="project1" class='carousel slide carousel-custom' data-interval="false">
                 <div class='carousel-outer'>
-                    <!-- Wrapper for slides -->
-                    <div class='carousel-inner'>
 
-                        <div class='item active'>
-                                <h4 class="sectionHeading"><span>Salesforce Event Login Page</span></h4>
-                                <img class="img-responsive" src='img/projects/SFlogin.png' alt='Login page' />
-                        </div>
-
-                        <div class='item'>
-                              <h4 class="sectionHeading"><span>Salesforce Event Index Page</span></h4>
-                              <img class="img-responsive" src='img/projects/sfClubIndex.png' alt='Index page' />
-                        </div>
-
-                        <div class='item'>
-                              <h4 class="sectionHeading"><span>Salesforce Event Location 1 Website</span></h4>
-                              <img class="img-responsive" src='img/projects/indexCC.jpg' alt='Event Location 1' />
-                        </div>
-
-                        <div class='item'>
-                              <h4 class="sectionHeading"><span>Salesforce Event Location 2 Website</span></h4>
-                              <img class="img-responsive" src='img/projects/indexPP.png' alt='Event Location 2' />
-                        </div>
-
-                        <div class='item'>
-                              <h4 class="sectionHeading"><span>Salesforce Event Location 3 Website</span></h4>
-                              <img class="img-responsive" src='img/projects/indexEM.png' alt='Event Location 3' />
-                        </div>
-                      <!-- Controls -->
+                  <!-- Controls -->
+                    <div class="controlContainer">
                       <a class='left carousel-control' href='#project1' data-slide='prev'>
-                          <!--span class='glyphicon glyphicon-chevron-left'></span-->
-                          <img src="img/leftArrow.png" />
+                        <span>Previous</span>
                       </a>
                       <a class='right carousel-control' href='#project1' data-slide='next'>
-                          <!--span class='glyphicon glyphicon-chevron-right'></span-->
-                          <img src="img/rightArrow.png" />
+                        <span>Next</span>
                       </a>
-                  </div>
+                    </div>
+
+                    <!-- Wrapper for slides -->
+                    <div class='carousel-inner'>
+                        <div class='item active'>
+                                <div class="imgContainer">
+                                  <img class="img-responsive" src='img/projects/SFlogin.png' alt='Login page' />
+                                </div>
+                        </div>
+
+                        <div class='item'>
+                              <div class="imgContainer">
+                                <img class="img-responsive" src='img/projects/sfClubIndex.png' alt='Index page' />
+                              </div>
+                        </div>
+
+                        <div class='item'>
+                              <div class="imgContainer">
+                                <img class="img-responsive" src='img/projects/indexCC.jpg' alt='Event Location 1' />
+                              </div>
+                        </div>
+
+                        <div class='item'>
+                              <div class="imgContainer">
+                                <img class="img-responsive" src='img/projects/indexPP.png' alt='Event Location 2' />
+                              </div>
+                        </div>
+
+                        <div class='item'>
+                              <div class="imgContainer">
+                                <img class="img-responsive" src='img/projects/indexEM.png' alt='Event Location 3' />
+                              </div>
+                        </div>
+
+                  </div> <!-- end of modal-body -->
 
                 </div> <!-- end of carousel-outer -->
               </div> <!-- end of  carousel custom -->
             </div> <!-- end of modal body -->
+            <div class="modal-footer">
+              <a href="#salesforceModalBTT">
+                <img class="img-responsive" src='img/backToTop.png' alt='Back to top' />
+              </a>
+            </div> <!-- end of modal-footer -->
           </div> <!-- end of modal content -->
         </div> <!-- end of modal dialog -->
       </div> <!-- end of salesforceModal -->
 
       <div class="modal fade" id="cemaModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" id="cemaModalBTT" role="document">
           <div class="modal-content">
             <div class="modal-header">
+              <h4 class="sectionHeading"><span>CEMA Summit 2016 Website</span></h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-            </div>
+            </div> <!-- end of modal header -->
             <div class="modal-body">
-                  <h4 class="sectionHeading"><span>CEMA Summit 2016 Website</span></h4>
-                  <img class="img-responsive" src='img/projects/indexCEMA.jpg' alt='CEMA Summit' />
+                  <div class="imgContainer">
+                    <img class="img-responsive" src='img/projects/indexCEMA.jpg' alt='CEMA Summit' />
+                  </div>
             </div> <!-- end of modal body -->
+            <div class="modal-footer">
+              <a href="#cemaModalBTT">
+                <img class="img-responsive" src='img/backToTop.png' alt='Back to top' />
+              </a>
+            </div> <!-- end of modal-footer -->
           </div> <!-- end of modal content -->
         </div> <!-- end of modal dialog -->
       </div> <!-- end of cemaModal -->
 
       <div class="modal fade" id="netscoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" id="netscoutModalBTT" role="document">
           <div class="modal-content">
             <div class="modal-header">
+              <h4 class="sectionHeading"><span>Netscout Club 2016 Website</span></h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-            </div>
+            </div> <!-- end of modal header -->
             <div class="modal-body">
-                  <h4 class="sectionHeading"><span>Netscout Club 2016 Website</span></h4>
-                  <img class="img-responsive" src='img/projects/indexNSC16.jpg' alt='Netscout Club' />
+                  <div class="imgContainer">
+                    <img class="img-responsive" src='img/projects/indexNSC16.jpg' alt='Netscout Club' />
+                  </div>
             </div> <!-- end of modal body -->
+            <div class="modal-footer">
+              <a href="#netscoutModalBTT">
+                <img class="img-responsive" src='img/backToTop.png' alt='Back to top' />
+              </a>
+            </div> <!-- end of modal-footer -->
           </div> <!-- end of modal content -->
         </div> <!-- end of modal dialog -->
       </div> <!-- end of netscoutModal -->
 
       <div class="modal fade" id="pureModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" id="pureModalBTT" role="document">
           <div class="modal-content">
             <div class="modal-header">
+              <h4 class="sectionHeading"><span>Pure Storage Club Websites</span></h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -691,58 +733,74 @@
             <div class="modal-body">
               <div id="project2" class='carousel slide carousel-custom' data-interval="false">
                 <div class='carousel-outer'>
+                  <!-- Controls -->
+                    <div class="controlContainer">
+                      <a class='left carousel-control' href='#project1' data-slide='prev'>
+                        <span>Previous</span>
+                      </a>
+                      <a class='right carousel-control' href='#project1' data-slide='next'>
+                        <span>Next</span>
+                      </a>
+                    </div>
                     <!-- Wrapper for slides -->
                     <div class='carousel-inner'>
 
                         <div class='item active'>
-                              <h4 class="sectionHeading"><span>Pure Storage Club 2017 Website</span></h4>
-                              <img class="img-responsive" src='img/projects/indexPPC17.png' alt='Pure Club 2017' />
+                              <div class="imgContainer">
+                                <img class="img-responsive" src='img/projects/indexPPC17.png' alt='Pure Club 2017' />
+                              </div>
                         </div>
 
                         <div class='item'>
-                              <h4 class="sectionHeading"><span>Pure Storage Club 2016 Website</span></h4>
-                              <img class="img-responsive" src='img/projects/indexPPC16.jpg' alt='Pure Club 2016' />
+                              <div class="imgContainer">
+                                <img class="img-responsive" src='img/projects/indexPPC16.jpg' alt='Pure Club 2016' />
+                              </div>
                         </div>
 
-                      <!-- Controls -->
-                      <a class='left carousel-control' href='#project2' data-slide='prev'>
-                          <!--span class='glyphicon glyphicon-chevron-left'></span-->
-                          <img src="img/leftArrow.png" />
-                      </a>
-                      <a class='right carousel-control' href='#project2' data-slide='next'>
-                          <!--span class='glyphicon glyphicon-chevron-right'></span-->
-                          <img src="img/rightArrow.png" />
-                      </a>
                   </div>
 
                 </div> <!-- end of carousel-outer -->
               </div> <!-- end of  carousel custom -->
 
             </div> <!-- end of modal body -->
+            <div class="modal-footer">
+              <a href="#pureModalBTT">
+                <img class="img-responsive" src='img/backToTop.png' alt='Back to top' />
+              </a>
+            </div> <!-- end of modal-footer -->
           </div> <!-- end of modal content -->
         </div> <!-- end of modal dialog -->
       </div> <!-- end of netscoutModal -->
 
       <div class="modal fade" id="nutanixModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" id="nutanixModalBTT" role="document">
           <div class="modal-content">
             <div class="modal-header">
+              <h4 class="sectionHeading"><span>Nutanix Website</span></h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-            </div>
+            </div><!-- end of modal header -->
             <div class="modal-body">
-                  <h4 class="sectionHeading"><span>Nutanix Website</span></h4>
-                  <img class="img-responsive" src='img/projects/nutanix2017.png' alt='Nutanix Website' />
+                  <div class="imgContainer">
+                    <img class="img-responsive" src='img/projects/nutanix2017.png' alt='Nutanix Website' />
+                  </div>
+
             </div> <!-- end of modal body -->
+            <div class="modal-footer">
+              <a href="#nutanixModalBTT">
+                <img class="img-responsive" src='img/backToTop.png' alt='Back to top' />
+              </a>
+            </div> <!-- end of modal-footer -->
           </div> <!-- end of modal content -->
         </div> <!-- end of modal dialog -->
       </div> <!-- end of nutanixModal -->
 
       <div class="modal fade" id="passportModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" id="passportModalBTT" role="document">
           <div class="modal-content">
             <div class="modal-header">
+              <h4 class="sectionHeading"><span>Business Card & Website Designs</span></h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -750,56 +808,67 @@
             <div class="modal-body">
               <div id="project4" class='carousel slide carousel-custom' data-interval="false">
                 <div class='carousel-outer'>
+                  <!-- Controls -->
+                    <div class="controlContainer">
+                      <a class='left carousel-control' href='#project1' data-slide='prev'>
+                        <span>Previous</span>
+                      </a>
+                      <a class='right carousel-control' href='#project1' data-slide='next'>
+                        <span>Next</span>
+                      </a>
+                    </div>
                     <!-- Wrapper for slides -->
                     <div class='carousel-inner'>
 
                         <div class='item active'>
-                                <h4 class="sectionHeading"><span>Business Card Design (Front)</span></h4>
-                                <img class="img-responsive" src='img/projects/PTBGcard(front).png' alt='Passport to Battle Ground Card Design (Front)' />
+                                <div class="imgContainer">
+                                  <img class="img-responsive" src='img/projects/PTBGcard(front).png' alt='Passport to Battle Ground Card Design (Front)' />
+                                </div>
                         </div>
 
                         <div class='item'>
-                              <h4 class="sectionHeading"><span>Business Card Design (Back)</span></h4>
-                              <img class="img-responsive" src='img/projects/PTBGcard(back).png' alt='Passport to Battle Ground Card Design (Back)' />
+                              <div class="imgContainer">
+                                <img class="img-responsive" src='img/projects/PTBGcard(back).png' alt='Passport to Battle Ground Card Design (Back)' />
+                              </div>
                         </div>
 
                         <div class='item'>
-                              <h4 class="sectionHeading"><span>Website Design</span></h4>
-                              <img class="img-responsive" src='img/projects/ptbgDesign.png' alt='Passport to Battle Ground Website Design' />
+                              <div class="imgContainer">
+                                <img class="img-responsive" src='img/projects/ptbgDesign.png' alt='Passport to Battle Ground Website Design' />
+                              </div>
                         </div>
 
                         <div class='item'>
-                              <h4 class="sectionHeading"><span>Website Screenshot</span></h4>
-                              <img class="img-responsive" src='img/projects/ptbgDesktop.png' alt='Passport to Battle Ground Website Screenshot' />
+                              <div class="imgContainer">
+                                <img class="img-responsive" src='img/projects/ptbgDesktop.png' alt='Passport to Battle Ground Website Screenshot' />
+                              </div>
                         </div>
 
                         <div class='item'>
-                              <h4 class="sectionHeading"><span>Website Wireframe</span></h4>
-                              <img class="img-responsive" src='img/projects/PTBGwireframe.png' alt='Passport to Battle Ground Website Wireframe' />
+                              <div class="imgContainer">
+                                <img class="img-responsive" src='img/projects/PTBGwireframe.png' alt='Passport to Battle Ground Website Wireframe' />
+                              </div>
                         </div>
 
-                      <!-- Controls -->
-                      <a class='left carousel-control' href='#project4' data-slide='prev'>
-                          <!--span class='glyphicon glyphicon-chevron-left'></span-->
-                          <img src="img/leftArrow.png" />
-                      </a>
-                      <a class='right carousel-control' href='#project4' data-slide='next'>
-                          <!--span class='glyphicon glyphicon-chevron-right'></span-->
-                          <img src="img/rightArrow.png" />
-                      </a>
                   </div>
 
                 </div> <!-- end of carousel-outer -->
               </div> <!-- end of  carousel custom -->
             </div> <!-- end of modal body -->
+            <div class="modal-footer">
+              <a href="#passportModalBTT">
+                <img class="img-responsive" src='img/backToTop.png' alt='Back to top' />
+              </a>
+            </div> <!-- end of modal-footer -->
           </div> <!-- end of modal content -->
         </div> <!-- end of modal dialog -->
       </div> <!-- end of passportModal -->
 
       <div class="modal fade" id="cmdcModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" id="cmdcModalBTT" role="document">
           <div class="modal-content">
             <div class="modal-header">
+              <h4 class="sectionHeading"><span>Desktop, Tablet & Mobile Designs</span></h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -807,70 +876,100 @@
             <div class="modal-body">
               <div id="project3" class='carousel slide carousel-custom' data-interval="false">
                 <div class='carousel-outer'>
+                  <!-- Controls -->
+                    <div class="controlContainer">
+                      <a class='left carousel-control' href='#project1' data-slide='prev'>
+                        <span>Previous</span>
+                      </a>
+                      <a class='right carousel-control' href='#project1' data-slide='next'>
+                        <span>Next</span>
+                      </a>
+                    </div>
                     <!-- Wrapper for slides -->
                     <div class='carousel-inner'>
 
                         <div class='item active'>
-                              <h4 class="sectionHeading"><span>Full Desktop Design</span></h4>
-                              <img class="img-responsive" src='img/projects/cmdcdesktop.png' alt='CMDC Desktop Design' />
+                              <div class="imgContainer">
+                                <img class="img-responsive" src='img/projects/cmdcdesktop.png' alt='CMDC Desktop Design' />
+                              </div>
                         </div>
 
                         <div class='item'>
-                              <h4 class="sectionHeading"><span>Tablet Design</span></h4>
-                              <img class="img-responsive" src='img/projects/cmdctablet.png' alt='CMDC Tablet Design' />
+                              <div class="imgContainer">
+                                <img class="img-responsive" src='img/projects/cmdctablet.png' alt='CMDC Tablet Design' />
+                              </div>
                         </div>
 
                         <div class='item'>
-                              <h4 class="sectionHeading"><span>Mobile Design</span></h4>
-                              <img class="img-responsive" src='img/projects/cmdcmobile.png' alt='CMDC Mobile Design' />
+                              <div class="imgContainer">
+                                <img class="img-responsive" src='img/projects/cmdcmobile.png' alt='CMDC Mobile Design' />
+                              </div>
                         </div>
 
-                      <!-- Controls -->
-                      <a class='left carousel-control' href='#project3' data-slide='prev'>
-                          <!--span class='glyphicon glyphicon-chevron-left'></span-->
-                          <img src="img/leftArrow.png" />
-                      </a>
-                      <a class='right carousel-control' href='#project3' data-slide='next'>
-                          <!--span class='glyphicon glyphicon-chevron-right'></span-->
-                          <img src="img/rightArrow.png" />
-                      </a>
                   </div>
 
                 </div> <!-- end of carousel-outer -->
               </div> <!-- end of  carousel custom -->
             </div> <!-- end of modal body -->
+            <div class="modal-footer">
+              <a href="#cmdcModalBTT">
+                <img class="img-responsive" src='img/backToTop.png' alt='Back to top' />
+              </a>
+            </div> <!-- end of modal-footer -->
           </div> <!-- end of modal content -->
         </div> <!-- end of modal dialog -->
       </div> <!-- end of cmdcModal -->
 
       <div class="modal fade" id="clarkModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" id="clarkModalBTT" role="document">
           <div class="modal-content">
+
             <div class="modal-header">
+              <h4 class="sectionHeading"><span>Clark Student Ambassadors Website</span></h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-            </div>
+            </div> <!-- end of modal footer -->
+
             <div class="modal-body">
-                  <h4 class="sectionHeading"><span>Clark Student Ambassadors Website</span></h4>
-                  <img class="img-responsive" src='img/projects/ambassadorblog.png' alt='Clark Student Ambassadors Website' />
+                  <div class="imgContainer">
+                    <img class="img-responsive" src='img/projects/ambassadorblog.png' alt='Clark Student Ambassadors Website' />
+                  </div>
             </div> <!-- end of modal body -->
+
+            <div class="modal-footer">
+              <a href="#clarkModalBTT">
+                <img class="img-responsive" src='img/backToTop.png' alt='Back to top' />
+              </a>
+            </div> <!-- end of modal-footer -->
+
           </div> <!-- end of modal content -->
         </div> <!-- end of modal dialog -->
       </div> <!-- end of clarkModal -->
 
       <div class="modal fade" id="zendakoModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+        <div class="modal-dialog" id="zendakoModalBTT" role="document">
           <div class="modal-content">
+
             <div class="modal-header">
+              <h4 class="sectionHeading"><span>Zendako Website</span></h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
-            </div>
+            </div> <!-- end of modal header -->
+
             <div class="modal-body">
-                  <h4 class="sectionHeading"><span>Zendako Website</span></h4>
-                  <img class="img-responsive" src='img/projects/zendako.png' alt='Zendako Website' />
+                  <div class="imgContainer">
+                    <img class="img-responsive" src='img/projects/zendako.png' alt='Zendako Website' />
+                  </div>
             </div> <!-- end of modal body -->
+
+            <div class="modal-footer">
+              <a href="#zendakoModalBTT">
+                <img class="img-responsive" src='img/backToTop.png' alt='Back to top' />
+              </a>
+            </div> <!-- end of modal-footer -->
+
           </div> <!-- end of modal content -->
         </div> <!-- end of modal dialog -->
       </div> <!-- end of zendakoModal -->
