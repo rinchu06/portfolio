@@ -270,7 +270,7 @@ body {
               .item {
                 .modalImg {
                   img {
-                    margin: 15px auto 0 15px;
+                    margin: 15px auto 0 auto;
                     transition:all 0.3s ease;
                     border: 1px solid #eeeeee;
                     &:hover {
@@ -287,11 +287,6 @@ body {
                       &:hover {
                         cursor: pointer;
                       }
-                    }
-                  }
-                  @media (max-width: 991px) {
-                    img {
-                      float: none;
                     }
                   }
                 }
@@ -367,12 +362,11 @@ body {
               }
             }
         }
-     }
-     @media (max-width: 768px) {
-       .carousel-custom {
-         margin: 0px auto;
-      }
-    }
+        @media (max-width: 768px) {
+          margin: 0px auto 20px auto;
+       }
+     }//end of carousel custom
+
   }//end of projects
 
   #experience {
@@ -445,12 +439,9 @@ body {
             z-index:1000;
             @include animation(box-shadow .4s);
           }
-      }
-
-      @media (max-width: 1199px) {
-        .entry   {
-          padding:0 0 40px 0;
-        }
+          @media (max-width: 1199px) {
+              padding:0 0 40px 0;
+          }
       }
 
       .grad {
@@ -544,6 +535,13 @@ body {
           background-color: #333333;
           padding: 12.5px;
           border-radius: .25em;
+          @media (max-width: 371px) {
+            font-size: 14px
+          }
+          @media (max-width: 346px) {
+            font-size: 13px;
+            padding: 10px 5px;
+          }
         }
       }
     }
@@ -652,12 +650,11 @@ body {
       &:hover {
         text-decoration: underline;
       }
-    }
-    @media (max-width: 450px) {
-      .carousel-control {
-        font-size: 18px;
+      @media (max-width: 450px) {
+          font-size: 18px;
       }
     }
+
     .left {
       float: left;
     }
@@ -666,8 +663,14 @@ body {
     }
   }
   .modal-body {
-    .controlContainer {
-      background-size: cover;
+    .carousel-outer {
+      padding-top: 25px;
+      .controlContainer {
+        background-size: cover;
+        border-radius: .25em;
+        margin: 0 auto;
+        width: 80%;
+      }
     }
   }
 
