@@ -373,6 +373,16 @@ body {
       color: $lightText;
     }
 
+    .timelineh2 {
+      font-size: 20px;
+      padding: 0;
+    }
+    @media (max-width: 1199px) {
+      .timelineh2  {
+        font-size: 18px;
+      }
+    }
+
     .timeline {
       position: relative;
       overflow: auto;
@@ -386,15 +396,6 @@ body {
        background: $timelineColor;
        left: 50%;
      }
-        h2 {
-          font-size: 20px;
-          padding: 0;
-        }
-        @media (max-width: 1199px) {
-          h2  {
-            font-size: 18px;
-          }
-        }
        .entryLeft {
          float: left;
          p, h2 {
@@ -499,6 +500,12 @@ body {
       }
     } //end of timeline
 
+    .mobileTimeline {
+      .row {
+          padding: 15px 0;
+      }
+    }
+
     .experienceBkrd {
       right: 0;
       bottom: 0;
@@ -529,7 +536,13 @@ body {
 
   footer {
     padding: 20px;
+    @media (max-width: 450px) {
+      p {
+        font-size: 14px;
+      }
+    }
   }
+
 
   .modal {
     .modal-dialog {
