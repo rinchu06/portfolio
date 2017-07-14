@@ -31,9 +31,9 @@
      showgrid="false"
      inkscape:current-layer="layer14"
      inkscape:document-units="px"
-     inkscape:cy="72.454283"
-     inkscape:cx="-186.45721"
-     inkscape:zoom="6.0918379"
+     inkscape:cy="58.989646"
+     inkscape:cx="-363.29276"
+     inkscape:zoom="2.1537899"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -41726,7 +41726,9 @@
         </g>
         <g
            id="g13784"
-           transform="translate(-23.937091,54.032754)">
+           transform="translate(-23.937091,54.032754)"
+           inkscape:export-xdpi="250"
+           inkscape:export-ydpi="250">
           <rect
              ry="5.3153706"
              y="433.44189"
